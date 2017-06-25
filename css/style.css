@@ -1,0 +1,13 @@
+.content{
+    padding:40px;
+}
+.price, .sku{
+    display:block;
+}
+.price{
+    font-size:26px;
+    margin-top:10px;
+}
+.sku{
+    font-style:italic;
+}
