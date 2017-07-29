@@ -29,4 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const dinoB = new Dinosaur(123, "T-rex");
     console.log("Dino ID: " + dinoA.id + " " + "name: " + dinoA.getName());
     console.log(Dinosaur.compareName(dinoA, dinoB));
+
+    class DinoType extends Dinosaur {
+        constructor(id, name, dinoType){
+            super(id, name);
+            this.dinoType = dinoType;
+        }
+    }
+
+    const dinoC= new DinoType(11, "Triceratops", "Herbal");
+
+    console.log(dinoC);
 });
