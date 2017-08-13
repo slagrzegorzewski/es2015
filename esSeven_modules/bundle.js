@@ -65,30 +65,37 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__module_js__ = __webpack_require__(1);
 
 
-console.log(__WEBPACK_IMPORTED_MODULE_0__module_js__["a" /* envi */]);
+var _module2 = __webpack_require__(1);
 
-console.log(__WEBPACK_IMPORTED_MODULE_0__module_js__["b" /* sumNumbers */](3, 5));
+var _module = _interopRequireWildcard(_module2);
 
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+console.log(_module.envi);
+
+console.log(_module.sumNumbers(3, 5));
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return envi; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return sumNumbers; });
-let envi = "PRODUCTION";
-let sumNumbers = (a, b) => {
-    return a + b;
-}
 
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var envi = "PRODUCTION";
+var sumNumbers = function sumNumbers(a, b) {
+    return a + b;
+};
+exports.envi = envi;
+exports.sumNumbers = sumNumbers;
 
 /***/ })
 /******/ ]);
