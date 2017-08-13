@@ -21,4 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     arr.updateId(23);
     console.log(arr);
+    const radioactive = "\u2622";
+    const heart = "\u2764\u262F";
+    console.log(radioactive, heart);
+    console.log(heart.length);
+
+    for (const s of heart){
+        console.log(s);
+    }
 })
